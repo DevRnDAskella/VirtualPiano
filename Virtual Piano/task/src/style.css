@@ -1,0 +1,68 @@
+:root {
+    --main-bg-color: rgb(19, 111, 99);
+    --white-key-color: rgb(255, 255, 255);
+    --black-key-color: rgb(0, 0, 0);
+    --main-font-color: rgb(31, 34, 50);
+    --second-font-color: rgb(255, 255, 255);
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keys {
+    position: relative;
+}
+
+.white-keys {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.black-keys {
+    display: flex;
+    position: absolute;
+    top: 29.8vh;
+    left: 35.7vw;
+}
+
+.white-keys kbd {
+    background-color: var(--white-key-color);
+    color: var(--main-font-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 40vh;
+    width: 5vw;
+}
+
+.black-keys kbd {
+    background-color: var(--black-key-color);
+    color: var(--second-font-color);
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 2px;
+    height: 30vh;
+    width: 2vw;
+    margin-right: 3vw;
+}
+
+.black-keys kbd:nth-child(3) {
+    margin-right: 8.5vw;
+}
